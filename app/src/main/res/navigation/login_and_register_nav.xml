@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_and_register_nav"
+    app:startDestination="@id/l_R_S_Fragment">
+
+    <fragment
+        android:id="@+id/l_R_S_Fragment"
+        android:name="com.example.fitnesstracker.L_R_S_Fragment"
+        android:label="fragment_l__r__s_"
+        tools:layout="@layout/fragment_l__r__s_" >
+        <action
+            android:id="@+id/action_l_R_S_Fragment_to_l_R_S_Gender_Fragment"
+            app:destination="@id/l_R_S_Gender_Fragment" />
+        <action
+            android:id="@+id/action_l_R_S_Fragment_to_l_R_S_loginFragment"
+            app:destination="@id/l_R_S_loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/l_R_S_Gender_Fragment"
+        android:name="com.example.fitnesstracker.L_R_S_Gender_Fragment"
+        android:label="fragment_l__r__s__gender_"
+        tools:layout="@layout/fragment_l__r__s__gender_" >
+        <action
+            android:id="@+id/action_l_R_S_Gender_Fragment_to_l_R_S_Fragment"
+            app:destination="@id/l_R_S_Fragment" />
+        <action
+            android:id="@+id/action_l_R_S_Gender_Fragment_to_l_R_S_Age_Fragment3"
+            app:destination="@id/l_R_S_Age_Fragment3" />
+    </fragment>
+    <fragment
+        android:id="@+id/l_R_S_Age_Fragment3"
+        android:name="com.example.fitnesstracker.L_R_S_Age_Fragment"
+        android:label="fragment_l__r__s__age_"
+        tools:layout="@layout/fragment_l__r__s__age_" >
+        <action
+            android:id="@+id/action_l_R_S_Age_Fragment3_to_l_R_S_Gender_Fragment"
+            app:destination="@id/l_R_S_Gender_Fragment" />
+
+        <action
+            android:id="@+id/action_l_R_S_Age_Fragment3_to_l_R_S_Weight_Fragment"
+            app:destination="@id/l_R_S_Weight_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/l_R_S_Weight_Fragment"
+        android:name="com.example.fitnesstracker.L_R_S_Weight_Fragment"
+        android:label="fragment_l__r__s__weight_"
+        tools:layout="@layout/fragment_l__r__s__weight_" >
+        <action
+            android:id="@+id/action_l_R_S_Weight_Fragment_to_l_R_S_Age_Fragment3"
+            app:destination="@id/l_R_S_Age_Fragment3" />
+
+        <action
+            android:id="@+id/action_l_R_S_Weight_Fragment_to_l_R_S_Age_Fragment32"
+            app:destination="@id/l_R_S_Age_Fragment3" />
+        <action
+            android:id="@+id/action_l_R_S_Weight_Fragment_to_l_R_S_Hight_Fragment2"
+            app:destination="@id/l_R_S_Hight_Fragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/l_R_S_Hight_Fragment2"
+        android:name="com.example.fitnesstracker.L_R_S_Hight_Fragment"
+        android:label="fragment_l__r__s__hight_"
+        tools:layout="@layout/fragment_l__r__s__hight_" >
+        <action
+            android:id="@+id/action_l_R_S_Hight_Fragment2_to_l_R_S_Weight_Fragment"
+            app:destination="@id/l_R_S_Weight_Fragment" />
+        <action
+            android:id="@+id/action_l_R_S_Hight_Fragment2_to_l_R_S_Goal_Fragment"
+            app:destination="@id/l_R_S_Goal_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/l_R_S_Goal_Fragment"
+        android:name="com.example.fitnesstracker.L_R_S_Goal_Fragment"
+        android:label="fragment_l__r__s__goal_"
+        tools:layout="@layout/fragment_l__r__s__goal_" >
+        <action
+            android:id="@+id/action_l_R_S_Goal_Fragment_to_l_R_S_Hight_Fragment2"
+            app:destination="@id/l_R_S_Hight_Fragment2" />
+        <action
+            android:id="@+id/action_l_R_S_Goal_Fragment_to_l_R_S_PhyALFragment"
+            app:destination="@id/l_R_S_PhyALFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/l_R_S_PhyALFragment"
+        android:name="com.example.fitnesstracker.L_R_S_PhyALFragment"
+        android:label="fragment_l__r__s__phy_a_l"
+        tools:layout="@layout/fragment_l__r__s__phy_a_l" >
+        <action
+            android:id="@+id/action_l_R_S_PhyALFragment_to_l_R_S_UserRegister_Fragment2"
+            app:destination="@id/l_R_S_UserRegister_Fragment" />
+        <action
+            android:id="@+id/action_l_R_S_PhyALFragment_to_l_R_S_Goal_Fragment5"
+            app:destination="@id/l_R_S_Goal_Fragment" />
+        <action
+            android:id="@+id/action_l_R_S_PhyALFragment_to_l_R_S_Goal_Fragment6"
+            app:destination="@id/l_R_S_Goal_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/l_R_S_UserRegister_Fragment"
+        android:name="com.example.fitnesstracker.L_R_S_UserRegister_Fragment"
+        android:label="fragment_l__r__s__user_register_"
+        tools:layout="@layout/fragment_l__r__s__user_register_" >
+        <action
+            android:id="@+id/action_l_R_S_UserRegister_Fragment_to_l_R_S_loginFragment"
+            app:destination="@id/l_R_S_loginFragment" />
+        <action
+            android:id="@+id/action_l_R_S_UserRegister_Fragment_to_l_R_S_PhyALFragment"
+            app:destination="@id/l_R_S_PhyALFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/l_R_S_loginFragment"
+        android:name="com.example.fitnesstracker.L_R_S_loginFragment"
+        android:label="fragment_l__r__s_login"
+        tools:layout="@layout/fragment_l__r__s_login" >
+        <action
+            android:id="@+id/action_l_R_S_loginFragment_to_l_R_S_UserRegister_Fragment"
+            app:destination="@id/l_R_S_UserRegister_Fragment" />
+        <action
+            android:id="@+id/action_l_R_S_loginFragment_to_l_R_S_Gender_Fragment"
+            app:destination="@id/l_R_S_Gender_Fragment" />
+        <action
+            android:id="@+id/action_l_R_S_loginFragment_to_l_R_S_Fragment"
+            app:destination="@id/l_R_S_Fragment" />
+    </fragment>
+</navigation>

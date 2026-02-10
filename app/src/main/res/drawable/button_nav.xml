@@ -1,0 +1,7 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="50dp"/> <!-- Rounded corners -->
+    <gradient
+        android:startColor="@color/nav"
+        android:endColor="@color/text_secondary"
+        android:angle="45"/> <!-- Gradient effect -->
+</shape>

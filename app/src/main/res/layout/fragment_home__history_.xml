@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0F0F0F"
+    android:padding="12dp"
+    tools:context=".Home_History_Fragment"
+    android:fitsSystemWindows="true"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="History (Last 3 Weeks)"
+            android:textColor="@color/text_primary"
+            android:textStyle="bold"
+            android:textSize="24sp" />
+
+        <!-- WEEK 1 -->
+        <include
+            android:id="@+id/week1"
+            layout="@layout/layout_week_section" />
+
+        <!-- WEEK 2 -->
+        <include
+            android:id="@+id/week2"
+            layout="@layout/layout_week_section" />
+
+        <!-- WEEK 3 -->
+        <include
+            android:id="@+id/week3"
+            layout="@layout/layout_week_section" />
+
+    </LinearLayout>
+</ScrollView>

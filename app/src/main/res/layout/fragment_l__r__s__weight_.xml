@@ -1,0 +1,129 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#111111"
+    tools:context=".L_R_S_Weight_Fragment">
+
+    <!-- Back Button (optional) -->
+
+    <!-- Title -->
+
+    <TextView
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:padding="16dp"
+        android:text="◀ Back"
+        android:textColor="#E2F163"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="What Is Your Weight?"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/backBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Small helper text -->
+    <TextView
+        android:id="@+id/tvHint"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="KG"
+        android:textColor="#FFFFFF"
+        android:padding="20dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="@drawable/rounded_background"
+        android:shadowColor="#000000"
+        android:textAlignment="center"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="4"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- BIG weight number (center) -->
+    <TextView
+        android:id="@+id/tvWeightValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="75"
+        android:textColor="#FFFFFF"
+        android:textSize="52sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/tvHint"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Arrow -->
+    <ImageView
+        android:id="@+id/ivArrow"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_arrow_up"
+        app:layout_constraintTop_toBottomOf="@id/tvWeightValue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Slider background -->
+    <View
+        android:id="@+id/sliderBg"
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="20dp"
+        android:background="#3B3032"
+        app:layout_constraintTop_toBottomOf="@id/ivArrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Horizontal Wheel RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/weightRecycler"
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:overScrollMode="never"
+        android:clipToPadding="false"
+        android:paddingLeft="150dp"
+        android:paddingRight="150dp"
+        app:layout_constraintTop_toTopOf="@id/sliderBg"
+        app:layout_constraintBottom_toBottomOf="@id/sliderBg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Continue Button -->
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnContinue"
+        style="@style/AppButton.Primary"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginBottom="40dp"
+        android:text="Continue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

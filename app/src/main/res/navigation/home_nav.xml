@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_nav"
+    app:startDestination="@id/home_welcome_Fragment">
+
+    <fragment
+        android:id="@+id/home_welcome_Fragment"
+        android:name="com.example.fitnesstracker.Home_welcome_Fragment"
+        android:label="fragment_home_welcome_"
+        tools:layout="@layout/fragment_home_welcome_" >
+        <action
+            android:id="@+id/action_home_welcome_Fragment_to_home_Activity_Fragment"
+            app:destination="@id/home_Activity_Fragment" />
+        <action
+            android:id="@+id/action_home_welcome_Fragment_to_home_Profile_Fragment"
+            app:destination="@id/home_Profile_Fragment" />
+        <action
+            android:id="@+id/action_home_welcome_Fragment_to_home_History_Fragment"
+            app:destination="@id/home_History_Fragment" />
+        <argument
+            android:name="userId"
+            app:argType="integer" />
+        <argument
+            android:name="username"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_home_welcome_Fragment_to_home_Workout_Fragment"
+            app:destination="@id/home_Workout_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/home_Activity_Fragment"
+        android:name="com.example.fitnesstracker.Home_Activity_Fragment"
+        android:label="fragment_home__activity_"
+        tools:layout="@layout/fragment_home__activity_" >
+        <action
+            android:id="@+id/action_home_Activity_Fragment_to_home_welcome_Fragment"
+            app:destination="@id/home_welcome_Fragment" />
+        <action
+            android:id="@+id/action_home_Activity_Fragment_to_home_welcome_Fragment2"
+            app:destination="@id/home_welcome_Fragment" />
+        <action
+            android:id="@+id/action_home_Activity_Fragment_to_home_Profile_Fragment"
+            app:destination="@id/home_Profile_Fragment" />
+        <argument
+            android:name="userId"
+            app:argType="integer" />
+        <argument
+            android:name="username"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_home_Activity_Fragment_to_home_Workout_Fragment"
+            app:destination="@id/home_Workout_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/home_History_Fragment"
+        android:name="com.example.fitnesstracker.Home_History_Fragment"
+        android:label="fragment_home__history_"
+        tools:layout="@layout/fragment_home__history_" >
+        <action
+            android:id="@+id/action_home_History_Fragment_to_home_welcome_Fragment"
+            app:destination="@id/home_welcome_Fragment" />
+        <action
+            android:id="@+id/action_home_History_Fragment_to_home_Profile_Fragment"
+            app:destination="@id/home_Profile_Fragment" />
+        <action
+            android:id="@+id/action_home_History_Fragment_to_home_Activity_Fragment"
+            app:destination="@id/home_Activity_Fragment" />
+        <argument
+            android:name="userId"
+            app:argType="integer" />
+        <argument
+            android:name="username"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_home_History_Fragment_to_home_Workout_Fragment"
+            app:destination="@id/home_Workout_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/home_Profile_Fragment"
+        android:name="com.example.fitnesstracker.Home_Profile_Fragment"
+        android:label="fragment_home__profile_"
+        tools:layout="@layout/fragment_home__profile_" >
+        <action
+            android:id="@+id/action_home_Profile_Fragment_to_home_welcome_Fragment"
+            app:destination="@id/home_welcome_Fragment" />
+        <action
+            android:id="@+id/action_home_Profile_Fragment_to_home_History_Fragment"
+            app:destination="@id/home_History_Fragment" />
+        <action
+            android:id="@+id/action_home_Profile_Fragment_to_home_Activity_Fragment"
+            app:destination="@id/home_Activity_Fragment" />
+        <argument
+            android:name="userId"
+            app:argType="integer" />
+        <argument
+            android:name="username"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_home_Profile_Fragment_to_home_Workout_Fragment"
+            app:destination="@id/home_Workout_Fragment" />
+        <action
+            android:id="@+id/action_home_Profile_Fragment_to_home_Profile_Edit_Fragment"
+            app:destination="@id/home_Profile_Edit_Fragment" />
+        <action
+            android:id="@+id/action_home_Profile_Fragment_to_privacyPolicyFragment"
+            app:destination="@id/privacyPolicyFragment" />
+        <action
+            android:id="@+id/action_home_Profile_Fragment_to_helpFragment"
+            app:destination="@id/helpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/home_Workout_Fragment"
+        android:name="com.example.fitnesstracker.Home_Workout_Fragment"
+        android:label="fragment_home__workout_"
+        tools:layout="@layout/fragment_home__workout_" >
+        <action
+            android:id="@+id/action_home_Workout_Fragment_to_home_History_Fragment"
+            app:destination="@id/home_History_Fragment" />
+        <action
+            android:id="@+id/action_home_Workout_Fragment_to_home_Activity_Fragment"
+            app:destination="@id/home_Activity_Fragment" />
+        <action
+            android:id="@+id/action_home_Workout_Fragment_to_home_welcome_Fragment"
+            app:destination="@id/home_welcome_Fragment" />
+        <action
+            android:id="@+id/action_home_Workout_Fragment_to_home_Profile_Fragment"
+            app:destination="@id/home_Profile_Fragment" />
+        <argument
+            android:name="userId"
+            app:argType="integer" />
+        <argument
+            android:name="username"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/home_Profile_Edit_Fragment"
+        android:name="com.example.fitnesstracker.Home_Profile_Edit_Fragment"
+        android:label="fragment_home__profile__edit_"
+        tools:layout="@layout/fragment_home__profile__edit_" >
+        <action
+            android:id="@+id/action_home_Profile_Edit_Fragment_to_home_Profile_Fragment"
+            app:destination="@id/home_Profile_Fragment" />
+        <argument
+            android:name="userId"
+            app:argType="integer" />
+        <argument
+            android:name="username"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/privacyPolicyFragment"
+        android:name="com.example.fitnesstracker.PrivacyPolicyFragment"
+        android:label="fragment_privacy_policy"
+        tools:layout="@layout/fragment_privacy_policy" >
+        <action
+            android:id="@+id/action_privacyPolicyFragment_to_home_Profile_Fragment"
+            app:destination="@id/home_Profile_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/helpFragment"
+        android:name="com.example.fitnesstracker.HelpFragment"
+        android:label="fragment_help"
+        tools:layout="@layout/fragment_help" >
+        <action
+            android:id="@+id/action_helpFragment_to_home_Profile_Fragment"
+            app:destination="@id/home_Profile_Fragment" />
+        <action
+            android:id="@+id/action_helpFragment_to_privacyPolicyFragment"
+            app:destination="@id/privacyPolicyFragment" />
+    </fragment>
+</navigation>

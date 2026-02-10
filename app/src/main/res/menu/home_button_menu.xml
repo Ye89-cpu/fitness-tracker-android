@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/itemhome"
+        android:title="HOME"
+        android:icon="@drawable/home"/>
+
+    <item
+        android:id="@+id/itemactivity"
+        android:title="Activity"
+        android:icon="@drawable/activity"/>
+    <item
+        android:id="@+id/itemWorkout"
+        android:title="Work Out"
+        android:icon="@drawable/workout"/>
+    <item
+        android:id="@+id/itemhistory"
+        android:title="History"
+        android:icon="@drawable/history"/>
+    <item
+        android:id="@+id/itemProfile"
+        android:title="Profile"
+        android:icon="@drawable/profile"/>
+</menu>

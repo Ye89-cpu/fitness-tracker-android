@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/welcome_nav"
+    app:startDestination="@id/introFragment">
+
+    <fragment
+        android:id="@+id/introFragment"
+        android:name="com.example.fitnesstracker.introFragment"
+        android:label="fragment_intro"
+        tools:layout="@layout/fragment_intro" >
+        <action
+            android:id="@+id/action_introFragment_to_intro_2Fragment"
+            app:destination="@id/intro_2Fragment" />
+        <action
+            android:id="@+id/action_introFragment_to_intro_3Fragment"
+            app:destination="@id/intro_3Fragment" />
+        <action
+            android:id="@+id/action_introFragment_to_intro_3Fragment2"
+            app:destination="@id/intro_3Fragment" />
+        <action
+            android:id="@+id/action_introFragment_to_intro_2Fragment2"
+            app:destination="@id/intro_2Fragment" />
+        <action
+            android:id="@+id/action_introFragment_to_intro_4Fragment"
+            app:destination="@id/intro_4Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/intro_2Fragment"
+        android:name="com.example.fitnesstracker.intro_2Fragment"
+        android:label="fragment_intro_2"
+        tools:layout="@layout/fragment_intro_2" >
+        <action
+            android:id="@+id/action_intro_2Fragment_to_introFragment"
+            app:destination="@id/introFragment" />
+        <action
+            android:id="@+id/action_intro_2Fragment_to_intro_3Fragment"
+            app:destination="@id/intro_3Fragment" />
+        <action
+            android:id="@+id/action_intro_2Fragment_to_intro_3Fragment2"
+            app:destination="@id/intro_3Fragment" />
+        <action
+            android:id="@+id/action_intro_2Fragment_to_intro_4Fragment"
+            app:destination="@id/intro_4Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/intro_3Fragment"
+        android:name="com.example.fitnesstracker.intro_3Fragment"
+        android:label="fragment_intro_3"
+        tools:layout="@layout/fragment_intro_3" >
+        <action
+            android:id="@+id/action_intro_3Fragment_to_intro_2Fragment"
+            app:destination="@id/intro_2Fragment" />
+        <action
+            android:id="@+id/action_intro_3Fragment_to_introFragment"
+            app:destination="@id/introFragment" />
+        <action
+            android:id="@+id/action_intro_3Fragment_to_intro_4Fragment"
+            app:destination="@id/intro_4Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/intro_4Fragment"
+        android:name="com.example.fitnesstracker.intro_4Fragment"
+        android:label="fragment_intro_4"
+        tools:layout="@layout/fragment_intro_4" >
+        <action
+            android:id="@+id/action_intro_4Fragment_to_introFragment"
+            app:destination="@id/introFragment" />
+        <action
+            android:id="@+id/action_intro_4Fragment_to_intro_2Fragment"
+            app:destination="@id/intro_2Fragment" />
+        <action
+            android:id="@+id/action_intro_4Fragment_to_intro_3Fragment"
+            app:destination="@id/intro_3Fragment" />
+    </fragment>
+</navigation>

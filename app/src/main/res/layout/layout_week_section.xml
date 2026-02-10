@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="16dp">
+
+
+    <TextView
+        android:id="@+id/tvWeekTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Week"
+        android:textColor="#AAAAAA"
+        android:textStyle="bold"
+        android:textSize="14sp" />
+
+    <!-- Chart Card -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/chart_border"
+        android:padding="12dp">
+
+        <com.db.williamchart.view.BarChartView
+            android:id="@+id/barchartWeek"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:padding="8dp"
+            app:chart_axis="xy"
+            app:chart_barsColor="@color/accent_primary"
+            app:chart_barsRadius="6dp"
+            app:chart_labelsColor="@android:color/white"
+            app:chart_labelsSize="10sp"
+            app:chart_spacing="10dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvWeekSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="This week activity and workout"
+        android:textColor="@color/text_primary"
+        android:textSize="12sp" />
+
+    <!-- Dropdown -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilHistoryFilterWeek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:boxBackgroundMode="outline"
+        app:endIconMode="dropdown_menu"
+        app:boxStrokeColor="#666666"
+        app:hintTextColor="#888888">
+
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+            android:id="@+id/actHistoryTypeWeek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="See more"
+            android:inputType="none"
+            android:focusable="false"
+            android:clickable="true"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_hint" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Activity -->
+    <LinearLayout
+        android:id="@+id/layoutActivityHistoryWeek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Activity History"
+            android:textColor="@color/text_primary"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvActivityWeek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false" />
+    </LinearLayout>
+
+    <!-- Workout -->
+    <LinearLayout
+        android:id="@+id/layoutWorkoutHistoryWeek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Workout History"
+            android:textColor="@color/text_primary"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvWorkoutWeek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false" />
+    </LinearLayout>
+
+</LinearLayout>
